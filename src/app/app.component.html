@@ -11,7 +11,7 @@
                <h3 fxShow fxHide.gt-md class="sub-heading">What You Need to Know About Money, 15 Minutes at a Time</h3>
             </div>
             <div class="nav">
-                <div fxLayout="column">
+                <div fxLayout="row">
                     <mat-card class="nav-item" routerLink="/home" routerLinkActive="active" fxFlex="33">HOME</mat-card>
                     <mat-card class="nav-item" routerLink="/contact" routerLinkActive="active" fxFlex="33">CONTACT</mat-card>
                     <mat-card class="nav-item" routerLink="/podcasts" routerLinkActive="active" fxFlex="34">PODCASTS</mat-card>
@@ -22,7 +22,7 @@
                                 
                     <router-outlet></router-outlet>
                     <hr/>
-                    <mat-nav-list fxLayout="row" fxLayoutAlign="space-between center">
+                    <mat-nav-list fxLayout="column" fxLayoutAlign="space-between center">
                         <div>
                             <h3>Share:</h3>
                             <div class="fb-share-button" data-href="http://15minutefa.com" data-layout="button" data-size="large"></div>
