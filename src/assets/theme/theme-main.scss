@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@import './theme-palettes.scss';
+// @import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
+// $custom-typography: mat-typography-config(
+//     $font-family: 'Zilla Slab'
+// );
+
+// @include mat-core($custom-typography);
+@include mat-core();
+
+$podcast-primary: mat-palette($podcast-gray);
+$podcast-accent:  mat-palette($podcast-green, A200, A100, A400);
+$podcast-warn:    mat-palette($podcast-blue);
+
+$podcast-theme: mat-dark-theme($podcast-primary, $podcast-accent, $podcast-warn);
+
+@include angular-material-theme($podcast-theme);
+@include mat-core-theme($podcast-theme);
+@include mat-button-theme($podcast-theme);
+@include mat-checkbox-theme($podcast-theme);
+
+$primary: map-get($podcast-theme, primary);
+$accent: map-get($podcast-theme, accent);
+$warn: map-get($podcast-theme, accent);
