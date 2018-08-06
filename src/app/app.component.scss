@@ -3,10 +3,14 @@
     height: 100%;
 }
 
-.content-container {
+.container {
     width: 100%;
     // max-width: 1180px;
     margin-bottom: 25px;
+}
+
+.card-container {
+    max-width: 1032px !important;
 }
 
 .sub-heading {
@@ -23,7 +27,11 @@
 }
 
 .nav-item {
-    background-color: #6BC145;
+    outline:none;    
+    &:not(:first-child) {
+        border-left: solid #424242 5px;           
+    }
+    background-color: #4574b8;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px; 
     border-bottom-left-radius: 0;
@@ -35,6 +43,55 @@
 
     &.active {
         background-color: #ffffff;
-        color: #000000;
+        color: #424242;
     }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.subnav-item {
+    outline:none;    
+    background-color: #4574b8 !important;
+    border-radius: 0;
+    border: solid #424242 1px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: none !important;
+    
+
+    &.active {
+        background-color: #ffffff;
+        color: #424242;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.subnav-list-item {
+    outline:none;    
+    background-color: #ffffff;
+    color: #424242;    
+    text-align: center;
+    cursor: pointer;
+    
+    &.active {
+        background-color: #ffffff;
+    }
+
+    &.hide {
+        display: none;
+    }
+}
+
+.mat-expansion-panel:not(.mat-expanded):not([aria-disabled='true']) .mat-expansion-panel-header:hover {
+    outline:none;    
+    background: #4574b8 !important;
+}
+
+hr {
+    margin: 0;
 }

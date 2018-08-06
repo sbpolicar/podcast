@@ -9,6 +9,7 @@ import {
   MatButtonModule,
   MatButtonToggleModule,
   MatListModule,
+  MatExpansionModule,
   MatIconModule,
   MatToolbarModule,
 } from '@angular/material';
@@ -24,6 +25,7 @@ export const MATERIAL_IMPORTS = [
   MatButtonModule,
   MatButtonToggleModule,
   MatListModule,
+  MatExpansionModule,
   MatIconModule,
   MatToolbarModule,
 ];
