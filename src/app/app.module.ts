@@ -10,6 +10,7 @@ import {
   MatButtonToggleModule,
   MatListModule,
   MatExpansionModule,
+  MatDialogModule,
   MatIconModule,
   MatToolbarModule,
 } from '@angular/material';
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PodcastsComponent } from './components/podcasts/podcasts.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 export const MATERIAL_IMPORTS = [
   MatCardModule,
@@ -26,6 +28,7 @@ export const MATERIAL_IMPORTS = [
   MatButtonToggleModule,
   MatListModule,
   MatExpansionModule,
+  MatDialogModule,
   MatIconModule,
   MatToolbarModule,
 ];
@@ -35,7 +38,8 @@ export const MATERIAL_IMPORTS = [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    PodcastsComponent
+    PodcastsComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,9 @@ export const MATERIAL_IMPORTS = [
     AppRoutingModule,
     FlexLayoutModule,
     ...MATERIAL_IMPORTS,
+  ],
+  entryComponents: [
+    ModalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

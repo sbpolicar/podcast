@@ -1,0 +1,25 @@
+form {
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    position: relative;
+
+    * {
+        margin: 0 auto;
+        padding: 0;
+        * {
+            text-align: center;
+        }
+        // margin: 10px auto;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-emphasis: left !important;
+    width: 10%;
+    color: black;
+    cursor: pointer;
+}
