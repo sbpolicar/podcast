@@ -11,10 +11,10 @@ export class AppComponent implements AfterViewInit {
   expanded = false;
 
   constructor(public dialog: MatDialog) {
-    this.dialog.open(ModalComponent, {
-      width: '500px',
-      // height: '500px',
-    });
+    // this.dialog.open(ModalComponent, {
+    //   width: '500px',
+    //   // height: '500px',
+    // });
   }
 
   ngAfterViewInit() {
